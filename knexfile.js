@@ -2,6 +2,7 @@
 
 module.exports = {
   development: {
+    //rdbms
     client: "sqlite3",
     connection: {
       filename: "./data/produce.db3",
@@ -9,9 +10,11 @@ module.exports = {
     useNullAsDefault: true,
 
     migrations: {
+      //this folder will be build automatically
       directory: "./data/migrations",
     },
     seeds: {
+      //this folder will be build automatically
       directory: "./data/seeds",
     },
   },

@@ -12,6 +12,7 @@ exports.down = function (knex) {
   //this f-n bring us from our version to the back one
   return knex.schema.dropTableIfExists("fruits");
 };
+//Why name field is not marked as unique in SQLite Studio?
 //==========================================
 // note the timestamp in the filename... used by knex to know what order
 // migrations should be run in.
